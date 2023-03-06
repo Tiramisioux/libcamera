@@ -2,13 +2,13 @@
   "disable": [],
   "plot": [],
   "alsc": {
-    "do_alsc_colour": 1,
+    "do_alsc_colour": 0,
     "luminance_strength": 0.5
   },
   "awb": {
     "greyworld": 0
   },
-  "blacklevel": -1,
+  "blacklevel": 50,
   "macbeth": {
     "small": 0,
     "show": 0

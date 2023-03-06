@@ -254,8 +254,8 @@ def find_macbeth(Cam, img, mac_config=(0, 0)):
         if cor < 0.75:
             print('Caution: Low confidence guess!')
             Cam.log += 'WARNING: Low confidence guess!'
-        # cv2.imshow('MacBeth', mac)
-        # represent(mac, 'MacBeth chart')
+        #cv2.imshow('MacBeth', mac)
+        #represent(mac, 'MacBeth chart')
 
     """
     extract data from coords_fit and plot on original image

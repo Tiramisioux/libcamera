@@ -44,11 +44,14 @@ def awb(Cam, cal_cr_list, cal_cb_list, plot):
         function will just return the greyscale patches
         """
         r_patchs, b_patchs, g_patchs = get_alsc_patches(Img, colour_cals)
+        
         """
         calculate ratio of r, b to g
         """
-        r_g = np.mean(r_patchs/g_patchs)
-        b_g = np.mean(b_patchs/g_patchs)
+        r_g = np.mean(r_patchs)/np.mean(g_patchs)
+        b_g = np.mean(b_patchs)/np.mean(g_patchs)
+        print(r_g, b_g)
+
         Cam.log += '\n       r : {:.4f}       b : {:.4f}'.format(r_g, b_g)
         """
         The curve tends to be better behaved in so-called hatspace.
@@ -92,6 +95,7 @@ def awb(Cam, cal_cr_list, cal_cb_list, plot):
     """
     fit quadratic fit to r_g hat and b_g_hat
     """
+    print(rbs_hat)
     a, b, c = np.polyfit(rbs_hat[0], rbs_hat[1], 2)
     Cam.log += '\nFit quadratic curve in hatspace'
     """

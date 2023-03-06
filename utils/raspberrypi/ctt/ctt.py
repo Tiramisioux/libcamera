@@ -244,6 +244,7 @@ class Camera:
         """
         Do CCM calibration
         """
+        print(cal_cr_list,cal_cb_list)
         try:
             ccms = ccm(self, cal_cr_list, cal_cb_list)
         except ArithmeticError:
