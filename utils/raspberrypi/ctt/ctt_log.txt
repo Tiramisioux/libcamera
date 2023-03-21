@@ -1,4 +1,4 @@
-Log created : Sun Mar  5 13:55:12 2023
+Log created : Sun Mar  5 20:25:26 2023
 
 ----------------------------------------------------------------------
 User Arguments
@@ -14,80 +14,82 @@ Image Loading
 ----------------------------------------------------------------------
 
 Directory: /home/pi/nfs_folder/calibrate_images/
-Files found: 6
+Files found: 8
 
-Image: 110L_5666K.dng
+Image: 133L_2549K.dng
 Identified as macbeth chart image
 Locating macbeth chart
 Macbeth chart located successfully
 Macbeth chart vertices:
-[[1560.  908.]
- [1608. 2550.]
- [3936. 2506.]
- [3894.  834.]]
-Confidence: 0.681WARNING: Low confidence guess!
-Colour temperature: 5666 K
-Lux value: 110 lx
+[[1798.  908.]
+ [1810. 2548.]
+ [4180. 2538.]
+ [4134.  832.]]
+Confidence: 0.684WARNING: Low confidence guess!
+Colour temperature: 2549 K
+Lux value: 133 lx
 
-Image: 72L_3073K.dng
+Image: 133L_2549K.jpg
+Identified as macbeth chart image
+WARNING: No Broadcom header found!
+Image discarded!
+
+Image: 144L_5760K.dng
 Identified as macbeth chart image
 Locating macbeth chart
 Macbeth chart located successfully
 Macbeth chart vertices:
-[[1570.  920.]
- [1606. 2552.]
- [3946. 2510.]
- [3894.  832.]]
-Confidence: 0.649WARNING: Low confidence guess!
-Colour temperature: 3073 K
-Lux value: 72 lx
+[[1436.  920.]
+ [1450. 2544.]
+ [3786. 2536.]
+ [3750.  846.]]
+Confidence: 0.639WARNING: Low confidence guess!
+Colour temperature: 5760 K
+Lux value: 144 lx
 
-Image: 85L_4157K.dng
+Image: 144L_5760K.jpg
+Identified as macbeth chart image
+WARNING: No Broadcom header found!
+Image discarded!
+
+Image: 154L_3410K.dng
 Identified as macbeth chart image
 Locating macbeth chart
 Macbeth chart located successfully
 Macbeth chart vertices:
-[[1568.  916.]
- [1610. 2556.]
- [3942. 2508.]
- [3894.  826.]]
-Confidence: 0.682WARNING: Low confidence guess!
-Colour temperature: 4157 K
-Lux value: 85 lx
+[[1798.  908.]
+ [1812. 2544.]
+ [4176. 2538.]
+ [4140.  830.]]
+Confidence: 0.664WARNING: Low confidence guess!
+Colour temperature: 3410 K
+Lux value: 154 lx
 
-Image: 90L_3621K.dng
+Image: 154L_3410K.jpg
+Identified as macbeth chart image
+WARNING: No Broadcom header found!
+Image discarded!
+
+Image: 73L_4242K.dng
 Identified as macbeth chart image
 Locating macbeth chart
 Macbeth chart located successfully
 Macbeth chart vertices:
-[[1568.  918.]
- [1606. 2552.]
- [3946. 2508.]
- [3892.  834.]]
-Confidence: 0.642WARNING: Low confidence guess!
-Colour temperature: 3621 K
-Lux value: 90 lx
+[[1438.  920.]
+ [1448. 2546.]
+ [3788. 2536.]
+ [3748.  848.]]
+Confidence: 0.645WARNING: Low confidence guess!
+Colour temperature: 4242 K
+Lux value: 73 lx
 
-Image: 98L_4712K.dng
+Image: 73L_4242K.jpg
 Identified as macbeth chart image
-Locating macbeth chart
-Macbeth chart located successfully
-Macbeth chart vertices:
-[[1570.  916.]
- [1606. 2552.]
- [3944. 2510.]
- [3892.  836.]]
-Confidence: 0.627WARNING: Low confidence guess!
-Colour temperature: 4712 K
-Lux value: 98 lx
-
-Image: jpg
-Identified as macbeth chart image
-WARNING: Error reading lux value
+WARNING: No Broadcom header found!
 Image discarded!
 
 Images found:
-Macbeth : 5
+Macbeth : 4
 ALSC : 0 
 
 Camera metadata
@@ -114,74 +116,66 @@ ALSC calibration aborted!
 GEQ Calibration
 ----------------------------------------------------------------------
 
-Processing image 110L_5666K.dng
+Processing image 133L_2549K.dng
 
-Processing image 72L_3073K.dng
+Processing image 144L_5760K.dng
 
-Processing image 85L_4157K.dng
+Processing image 154L_3410K.dng
 
-Processing image 90L_3621K.dng
-
-Processing image 98L_4712K.dng
+Processing image 73L_4242K.dng
 
 Processed all images
-Fit result: slope = 0.00665 offset = 74072
-Fit after correction factors: slope = 0.00998 offset = 74273
+Fit result: slope = 0.00863 offset = 88685
+Fit after correction factors: slope = 0.01295 offset = 88886
 GEQ calibrations written to json file
 
 ----------------------------------------------------------------------
 LUX Calibration
 ----------------------------------------------------------------------
 
-Lux found closest to 1000: 110 lx
-Image used: 110L_5666K.dng
-Shutter speed = 59992
+Lux found closest to 1000: 154 lx
+Image used: 154L_3410K.dng
+Shutter speed = 86571
 Gain = 655.35
 Aperture = 1
 Average channel values on grey patches:
-Red = 11379 Green = 12321 Blue = 18630
-Channel gains: Red = 1.637 Blue = 1.512
+Red = 16710 Green = 10774 Blue = 20836
+Channel gains: Red = 1.247 Blue = 1.934
 Average channel values over entire image scaled by channel gains:
-Red = 24273 Green = 25544 Blue = 25249
-Y value calculated: 24990
+Red = 15445 Green = 16611 Blue = 15100
+Y value calculated: 15375
 LUX calibrations written to json file
 
 ----------------------------------------------------------------------
 NOISE Calibration
 ----------------------------------------------------------------------
 
-Processing image: 110L_5666K.dng
+Processing image: 133L_2549K.dng
 Black level = 50
-Noise profile: offset = 0 slope = 0.152
+Noise profile: offset = 0 slope = 0.138
 Offset below zero. Fit recalculated with zero offset
-Noise profile: offset = 0 slope = 0.104
+Noise profile: offset = 0 slope = 0.089
 
-Processing image: 72L_3073K.dng
+Processing image: 144L_5760K.dng
 Black level = 50
-Noise profile: offset = 0 slope = 0.148
+Noise profile: offset = 0 slope = 0.113
 Offset below zero. Fit recalculated with zero offset
-Noise profile: offset = 0 slope = 0.095
+Noise profile: offset = 0 slope = 0.102
 
-Processing image: 85L_4157K.dng
+Processing image: 154L_3410K.dng
 Black level = 50
-Noise profile: offset = 0 slope = 0.139
+Noise profile: offset = 0 slope = 0.131
 Offset below zero. Fit recalculated with zero offset
-Noise profile: offset = 0 slope = 0.101
+Noise profile: offset = 0 slope = 0.093
 
-Processing image: 90L_3621K.dng
+Processing image: 73L_4242K.dng
 Black level = 50
-Noise profile: offset = 0 slope = 0.147
+Noise profile: offset = 0 slope = 0.129
 Offset below zero. Fit recalculated with zero offset
-Noise profile: offset = 0 slope = 0.101
-
-Processing image: 98L_4712K.dng
-Black level = 50
-Noise profile: offset = 0 slope = 0.151
-Offset below zero. Fit recalculated with zero offset
-Noise profile: offset = 0 slope = 0.103
+Noise profile: offset = 0 slope = 0.084
 
 Finished processing images
-Average noise profile: constant = 0 slope = 0.102
+Average noise profile: constant = 0 slope = 0.095
 NOISE calibrations written to json
 
 ----------------------------------------------------------------------
@@ -190,39 +184,32 @@ AWB Calibration
 
 WARNING: No ALSC tables found.
 AWB calibration performed without ALSC correction...
-Processing 110L_5666K.dng
-       r : 0.6097       b : 0.6604
-   r_hat : 0.2686   b_hat : 0.2909
+Processing 133L_2549K.dng
+       r : 0.9791       b : 0.4168
+   r_hat : 0.4087   b_hat : 0.1740
 
-Processing 72L_3073K.dng
-       r : 0.8464       b : 0.5334
-   r_hat : 0.3557   b_hat : 0.2241
+Processing 144L_5760K.dng
+       r : 0.5952       b : 0.6469
+   r_hat : 0.2655   b_hat : 0.2885
 
-Processing 85L_4157K.dng
-       r : 0.7195       b : 0.5894
-   r_hat : 0.3116   b_hat : 0.2553
+Processing 154L_3410K.dng
+       r : 0.8015       b : 0.5159
+   r_hat : 0.3459   b_hat : 0.2226
 
-Processing 90L_3621K.dng
-       r : 0.7789       b : 0.5626
-   r_hat : 0.3326   b_hat : 0.2403
-
-Processing 98L_4712K.dng
-       r : 0.6762       b : 0.6246
-   r_hat : 0.2939   b_hat : 0.2715
+Processing 73L_4242K.dng
+       r : 0.7309       b : 0.6552
+   r_hat : 0.3063   b_hat : 0.2746
 
 Finished processing images
 Fit quadratic curve in hatspace
 Found closest point on fit line to each point in dehatspace
-Transverse pos : 0.00557
-Transverse neg : 0.00443
-Forced transverse pos to 0.01
-Forced transverse neg to 0.01
+Transverse pos : 0.05251
+Transverse neg : 0.04118
 Final CT curve:
-  ct: 3073.0    r: 0.8461    b: 0.5328  
-  ct: 3621.0    r: 0.7791    b: 0.5629  
-  ct: 4157.0    r: 0.7211    b: 0.5929  
-  ct: 4712.0    r: 0.6743    b: 0.6201  
-  ct: 5666.0    r: 0.6102    b: 0.6618  
+  ct: 2549.0    r: 0.9745    b: 0.4102  
+  ct: 3410.0    r: 0.8186    b: 0.5483  
+  ct: 4242.0    r: 0.7124    b: 0.6133  
+  ct: 5760.0    r: 0.6004    b: 0.6611  
 AWB calibration written to json file
 
 ----------------------------------------------------------------------
@@ -231,27 +218,23 @@ CCM Calibration
 
 WARNING: No ALSC tables found.
 CCM calibration performed without ALSC correction...
-Processing image: 110L_5666K.dng
-Gain with respect to standard colours: 0.980
+Processing image: 133L_2549K.dng
+Gain with respect to standard colours: 1.088
 
-Processing image: 72L_3073K.dng
-Gain with respect to standard colours: 1.327
+Processing image: 144L_5760K.dng
+Gain with respect to standard colours: 0.868
 
-Processing image: 85L_4157K.dng
-Gain with respect to standard colours: 1.077
+Processing image: 154L_3410K.dng
+Gain with respect to standard colours: 0.895
 
-Processing image: 90L_3621K.dng
-Gain with respect to standard colours: 1.121
-
-Processing image: 98L_4712K.dng
-Gain with respect to standard colours: 1.044
+Processing image: 73L_4242K.dng
+Gain with respect to standard colours: 1.642
 
 Finished processing images
-Matrix calculated for colour temperature of 5666 K
-Matrix calculated for colour temperature of 3073 K
-Matrix calculated for colour temperature of 4157 K
-Matrix calculated for colour temperature of 3621 K
-Matrix calculated for colour temperature of 4712 K
+Matrix calculated for colour temperature of 2549 K
+Matrix calculated for colour temperature of 5760 K
+Matrix calculated for colour temperature of 3410 K
+Matrix calculated for colour temperature of 4242 K
 CCM calibration written to json file
 
 ----------------------------------------------------------------------

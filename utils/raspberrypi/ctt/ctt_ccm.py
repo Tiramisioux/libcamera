@@ -87,6 +87,8 @@ def ccm(Cam, cal_cr_list, cal_cb_list):
     convert reference colours from srgb to rgb
     """
     m_srgb = degamma(m_rgb)
+    print(m_srgb)
+    print(m_rgb)
     """
     reorder reference values to match how patches are ordered
     """

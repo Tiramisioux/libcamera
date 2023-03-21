@@ -19,6 +19,7 @@ public:
 	double gain(uint32_t gainCode) const override;
 	void getDelays(int &exposureDelay, int &gainDelay,
 		       int &vblankDelay, int &hblankDelay) const override;
+	unsigned int hideFramesModeSwitch() const override;
 
 private:
 	/*
@@ -57,6 +58,13 @@ void CamHelperImx283::getDelays(int &exposureDelay, int &gainDelay,
 	vblankDelay = 2;
 	hblankDelay = 2;
 }
+
+unsigned int CamHelperImx283::hideFramesModeSwitch() const
+{
+	/* After a mode switch, we seem to get 1 bad frame. */
+	return 1;
+}
+
 
 static CamHelper *create()
 {
