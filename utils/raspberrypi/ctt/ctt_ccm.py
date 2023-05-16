@@ -25,7 +25,7 @@ def ccm(Cam, cal_cr_list, cal_cb_list):
     imgs = Cam.imgs
     """
     standard macbeth chart colour values
-    
+    """
     m_rgb = np.array([  # these are in sRGB
         [116, 81, 67],    # dark skin
         [199, 147, 129],  # light skin
@@ -52,10 +52,10 @@ def ccm(Cam, cal_cr_list, cal_cb_list):
         [82, 84, 86],     # neutral 3.5
         [49, 49, 51]      # black 2
     ])
-    """
+
     """
     datacolor chart colour values
-    """
+    
     m_rgb = np.array([  # these are in sRGB
         [98, 187, 166],     #Aqua
         [126, 125, 174],    #Lavender
@@ -82,7 +82,7 @@ def ccm(Cam, cal_cr_list, cal_cb_list):
         [80, 80, 78],       #80% Gray
         [43, 41, 43],       #Card Black
     ])
-
+    """
     """
     convert reference colours from srgb to rgb
     """
