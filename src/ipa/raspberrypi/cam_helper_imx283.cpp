@@ -41,12 +41,12 @@ CamHelperImx283::CamHelperImx283()
 
 uint32_t CamHelperImx283::gainCode(double gain) const
 {
-	return static_cast<uint32_t>(2048 - exp(-gain/20 * log(10)) * 2048);
+	return static_cast<uint32_t>(2048.0 - 2048.0/gain);
 }
 
 double CamHelperImx283::gain(uint32_t gainCode) const
 {
-	return static_cast<double> (-20 * log((2048 - gainCode)/2048));
+	return static_cast<double>(2048.0/(2048 - gainCode));
 }
 
 void CamHelperImx283::getDelays(int &exposureDelay, int &gainDelay,
