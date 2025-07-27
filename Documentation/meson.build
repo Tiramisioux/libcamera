@@ -112,54 +112,12 @@ if doxygen.found() and dot.found()
                   install_tag : 'doc-internal')
 endif
 
-#
-# Sphinx
-#
+# Install markdown documentation directly without using Sphinx
 
-sphinx = find_program('sphinx-build-3', 'sphinx-build',
-                      required : get_option('documentation'))
+install_data('index.md',
+             install_dir : doc_install_dir,
+             install_tag : 'doc')
 
-if sphinx.found()
-    docs_sources = [
-        'camera-sensor-model.rst',
-        'code-of-conduct.rst',
-        'coding-style.rst',
-        'conf.py',
-        'contributing.rst',
-        'design/ae.rst',
-        'documentation-contents.rst',
-        'environment_variables.rst',
-        'feature_requirements.rst',
-        'guides/application-developer.rst',
-        'guides/ipa.rst',
-        'guides/pipeline-handler.rst',
-        'guides/tracing.rst',
-        'index.rst',
-        'introduction.rst',
-        'lens_driver_requirements.rst',
-        'libcamera_architecture.rst',
-        'mali-c55.dot',
-        'python-bindings.rst',
-        'sensor_driver_requirements.rst',
-        'software-isp-benchmarking.rst',
-       '../README.rst',
-    ]
-
-    release = 'release=v' + libcamera_git_version
-
-    custom_target('documentation',
-                  command : [sphinx, '-D', release, '-q', '-W', '-b', 'html',
-                             meson.current_source_dir(), '@OUTPUT@'],
-                  input : docs_sources,
-                  output : 'html',
-                  build_by_default : true,
-                  install : true,
-                  install_dir : doc_install_dir,
-                  install_tag : 'doc')
-
-    custom_target('documentation-linkcheck',
-                  command : [sphinx, '-W', '-b', 'linkcheck', meson.current_source_dir(), '@OUTPUT@'],
-                  build_always_stale : true,
-                  input : docs_sources,
-                  output : 'linkcheck')
-endif
+install_subdir('guides',
+               install_dir : doc_install_dir / 'guides',
+               install_tag : 'doc')
